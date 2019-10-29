@@ -1,2 +1,2 @@
 # Utils  
-python codes for automate the boaring tasks!!!
+python codes to automate the boaring tasks!!!
