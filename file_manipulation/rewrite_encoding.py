@@ -6,7 +6,7 @@ import time
 
 def rewrite_encoding(fname: str, before: str, after: str):
     print("{}のencodingを{}⇒{}に変更します".format(fname, before, after))
-    timessleep(1)
+    time.sleep(1)
     now: str = datetime.now().timestamp()
     tmp_fname = "{}_{}".format(now, fname)
     print(tmp_fname)
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     AFTER = "shift-jis"
     fnames = os.listdir()
     print("curent_dirのすべてのtxtファイルのencodingを書き換えます")
-    print("{}⇒{}に書き換えます。よろしいですか？".format(BEFORE,AFTER))
+    print("{}⇒{}に書き換えます。よろしいですか？5s後に実行されます".format(BEFORE,AFTER))
     time.sleep(5)
     for fname in fnames:
         if fname.endswith(".txt"):
