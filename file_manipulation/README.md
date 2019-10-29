@@ -2,7 +2,7 @@
 ### 環境構築
 python3.7  
 ※windowsの場合：https://www.python.jp/install/windows/install_py3.html　　
-※linuxの場合:https://qiita.com/micheleno13/items/39ad85cfe44ca32f53ee
+※linuxの場合:https://qiita.com/micheleno13/items/39ad85cfe44ca32f53ee　　
 ※標準ライブラリーしか使ってないのでこれだけです
 
 ### rewrite_encoding.py
@@ -11,11 +11,11 @@ encodingをUTF-8⇒shift-jisに変更するプログラムです。encoding変�
 #### 使いかた(windows10の場合)
 コマンドプロンプトを立ち上げる　　
 
-'''
+```
 cd log_dir
-※log_dirはlogファイルのtxtファイルがおいてあるdir名を指定してください
+※log_dirはlogファイルがおいてあるdirを指定してください
 python rewrite_encoding.py
-'''
+```
 
 
 
