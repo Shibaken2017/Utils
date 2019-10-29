@@ -29,7 +29,7 @@ if __name__ == "__main__":
     AFTER = "shift-jis"
     fnames = os.listdir()
     print("curent_dirのすべてのtxtファイルのencodingを書き換えます")
-    print("{}⇒{}に書き換えます。よろしいですか？".format(BEFORE,AFTER))
+    print("{}⇒{}に書き換えます。よろしいですか？5s後に実行されます".format(BEFORE,AFTER))
     time.sleep(5)
     for fname in fnames:
         if fname.endswith(".txt"):
