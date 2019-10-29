@@ -1,5 +1,5 @@
 # Utils  
-python codes to automate the boaring tasks!!!  
+python codes to automate the boaring stuff!!!  
 
 # reference  
 https://automatetheboringstuff.com/
