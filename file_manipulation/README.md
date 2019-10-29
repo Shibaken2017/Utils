@@ -1,7 +1,7 @@
 
 ## 環境構築
 
-標準ライブラリーしか使ってないのでpython3.7installするだけ。  
+標準ライブラリーしか使ってないのでpython3.7をinstallするだけ。  
 ※windowsの場合：https://www.python.jp/install/windows/install_py3.html  
 ※linuxの場合:https://qiita.com/micheleno13/items/39ad85cfe44ca32f53ee  
 ※python3.7で動作確認済み。
