@@ -1,12 +1,13 @@
 import os
 import sys
 from datetime import datetime
+
 import time
 
 
 def rewrite_encoding(fname: str, before: str, after: str):
     print("{}のencodingを{}⇒{}に変更します".format(fname, before, after))
-    timessleep(1)
+    time.sleep(1)
     now: str = datetime.now().timestamp()
     tmp_fname = "{}_{}".format(now, fname)
     print(tmp_fname)
