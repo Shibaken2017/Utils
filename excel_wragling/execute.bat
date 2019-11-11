@@ -1,0 +1,2 @@
+python rewrite_encoding.py
+python execute_macro.py
