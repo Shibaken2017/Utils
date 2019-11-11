@@ -3,7 +3,7 @@
 
 ## library  
 ```
-pip install opnnpyxl  
+pip install openpyxl  
 pip install retrying  
 ```
 
