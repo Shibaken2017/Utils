@@ -6,3 +6,6 @@ https://automatetheboringstuff.com/
 
 
 # 入力テスト
+
+
+# 注意事項
