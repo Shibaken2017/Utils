@@ -39,12 +39,13 @@ def remove_needless_cell(fname: str, sheet_name="CVSSレベル取得"):
 		row_ += 1
 		content=sheet.cell(row=row_, column=col_).value
 		if content:
+			#print(content)
 			if not content.lower().__contains__("cvss"):
 				with open(FNAME,"a",encoding="utf-8")as writer:
 					print("要確認:{} {}行目!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!".format(FNAME,row_))
 					print(content)
 					print("")
-					writer.write(FNAME+"\t"+str(row_)+"行目\t"+content+"\n")
+					writer.write(fname+"\t"+str(row_)+"行目\t"+content+"\n")
 
 			row_ += 2
 			index_list.append(row_)
@@ -61,6 +62,7 @@ def remove_needless_cell(fname: str, sheet_name="CVSSレベル取得"):
 
 if __name__ == "__main__":
     # macro実行
+    #current-dirのxlmxをすべて実行する
 	start=time.time()
 	fname_list = os.listdir()
 	for fname in fname_list:

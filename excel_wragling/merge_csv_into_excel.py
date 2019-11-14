@@ -2,7 +2,6 @@ import openpyxl as px
 import os
 from typing import List
 
-
 def write_excel(year:int,month:int,csv_dir:str):
     #csv_fileをexcelファイルにまとめる
     csv_fnames=os.listdir(csv_dir)#path
