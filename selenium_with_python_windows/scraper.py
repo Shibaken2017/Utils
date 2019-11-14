@@ -2,7 +2,7 @@ from selenium import webdriver
 from datetime import datetime
 import os
 import time
-
+#TODO:closeメソッド,headless-modeの追加
 class Scraper:
 	def __init__(self,driver_path:str="chromedriver.exe"):
 		self.driver=webdriver.Chrome(driver_path)
