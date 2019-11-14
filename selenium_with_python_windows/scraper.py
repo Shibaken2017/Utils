@@ -11,7 +11,7 @@ class Scraper:
 		unixtime=datetime.now().timestamp()
 		self.__save_dir="screenshot_{}".format(unixtime)
 		os.mkdir(self.__save_dir)
-		slef.__count:int=0
+		self.__count:int=0
 
 	def get_score(self,url:str,target_selector:str):	
 		#chromeのverが違うと動かないので要確認!
@@ -22,7 +22,7 @@ class Scraper:
 		self.__save_screenshot()
 
 	def __save_screenshot(self):
-		self.dirver.save_screenshot(os.path.join(self.__save_dir,str(self.__count),".png"))
+		self.driver.save_screenshot(os.path.join(self.__save_dir,str(self.__count),".png"))
 		self.__count+=1
 
 
