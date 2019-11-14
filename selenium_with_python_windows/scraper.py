@@ -1,23 +1,30 @@
 from selenium import webdriver
 from datetime import datetime
 import os
-
+import time
 
 class Scraper:
 	def __init__(self,driver_path:str="chromedriver.exe"):
 		self.driver=webdriver.Chrome(driver_path)
+		print(type(self.driver))
 		self.driver.implicitly_wait(30)
 		unixtime=datetime.now().timestamp()
 		self.__save_dir="screenshot_{}".format(unixtime)
 		os.mkdir(self.__save_dir)
+		slef.__count:int=0
 
-	def get_score(self,url:str,target_selector:str):
-		
+	def get_score(self,url:str,target_selector:str):	
 		#chromeのverが違うと動かないので要確認!
 		print(url)
 		self.driver.get(url)
 		ele=self.driver.find_element_by_css_selector(target_selector)
-		print(ele.text)
+		print("score:{}".format(ele.text))
+		self.__save_screenshot()
+
+	def __save_screenshot(self):
+		self.dirver.save_screenshot(os.path.join(self.__save_dir,str(self.__count),".png"))
+		self.__count+=1
+
 
 
 if __name__=="__main__":
