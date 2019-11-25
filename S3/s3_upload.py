@@ -5,9 +5,9 @@ import os
 
 def upload(site_id:int,target:str):
 	if target=="stage":
-		bucket_name='bs.misumi.staging'
+		bucket_name=''
 	elif target=="develop":
-		bucket_name='bs.misumi.development'
+		bucket_name='t'
 	else:
 		raise Exception("targetはstage or developのみ")
 	profile=target
