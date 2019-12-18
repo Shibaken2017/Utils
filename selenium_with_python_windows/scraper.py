@@ -3,8 +3,10 @@ from datetime import datetime
 import os
 import time
 #TODO:closeメソッド,headless-modeの追加
+
+
 class Scraper:
-	def __init__(self,driver_path:str="chromedriver.exe"):
+	def __init__(self,driver_path:str="chromedriver_79.exe"):
 		self.driver=webdriver.Chrome(driver_path)
 		print(type(self.driver))
 		self.driver.implicitly_wait(30)
